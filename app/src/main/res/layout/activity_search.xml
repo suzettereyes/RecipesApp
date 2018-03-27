@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:id="@+id/diet_restriction"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="46dp"
+        android:layout_marginTop="96dp"
+        android:text="@string/diet_restriction" />
+
+    <TextView
+        android:id="@+id/serving_restriction"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/diet_restriction"
+        android:layout_below="@+id/diet_restriction"
+        android:layout_marginTop="93dp"
+        android:text="@string/serving_restriction" />
+
+    <TextView
+        android:id="@+id/prep_time_restriction"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/serving_restriction"
+        android:layout_below="@+id/serving_restriction"
+        android:layout_marginTop="81dp"
+        android:text="@string/prep_time_restriction" />
+
+    <Button
+        android:id="@+id/search_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="92dp"
+        android:layout_toEndOf="@+id/prep_time_restriction"
+        android:text="@string/search_button" />
+
+    <Spinner
+        android:id="@+id/diet_restriction_dropdown"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/diet_restriction"
+        android:layout_marginStart="29dp"
+        android:layout_toEndOf="@+id/search_button"
+        android:spinnerMode="dropdown"
+        />
+
+    <Spinner
+        android:id="@+id/serving_restriction_dropdown"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/diet_restriction_dropdown"
+        android:layout_alignTop="@+id/serving_restriction"
+        android:spinnerMode="dropdown"
+        />
+
+    <Spinner
+        android:id="@+id/prep_time_restriction_dropdown"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/serving_restriction_dropdown"
+        android:layout_alignTop="@+id/prep_time_restriction"
+        android:spinnerMode="dropdown"
+        />
+</RelativeLayout>
